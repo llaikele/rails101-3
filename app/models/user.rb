@@ -18,7 +18,7 @@ class User < ApplicationRecord
     participated_groups << group
   end
 
-  def quilt!(group)
+  def quit!(group)
     participated_groups.delete(group)
   end
 end
